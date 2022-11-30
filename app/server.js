@@ -4,7 +4,7 @@ var cors = require("cors");
 var session = require("express-session");
 
 //Importar Conexion Mongo db 
-const archivoDB = require('./config/conexionDB')
+const archivoDB = require('../config/conexionDB')
 
 //Middlewares
 app.use(cors());
@@ -26,8 +26,8 @@ app.use("*", function (req, res, next) {
 
 
 // Importacion del archivo de rutas y el modelo de usuarios
-const rutaUsuario = require('./routes/usuarioRoutes')
-const rutaProducto = require('./routes/productosRoutes')
+const rutaUsuario = require('../routes/usuarioRoutes')
+const rutaProducto = require('../routes/productosRoutes')
 
 
 // Importar Body.parser
